@@ -1,0 +1,49 @@
+.page-wrapper {
+  height: 200vh;
+  width: 100vw;
+  background-color: black;
+}
+
+img {
+  position: absolute;
+  max-height: 70%;
+
+  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+.text-parent {
+  position: absolute;
+  top: 35%;
+
+  &:first-of-type {
+    z-index: 1;
+  }
+
+  &:last-of-type {
+    z-index: 3;
+  }
+
+  h1 {
+    color: wheat;
+    line-height: 110%;
+    font-size: 8.1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+    font-family: sequel, sans-serif;
+
+    &.outline {
+      -webkit-text-stroke: 5px wheat;
+      text-stroke: 1px wheat;
+      color: transparent;
+    }
+
+    &:last-of-type {
+      margin-left: -30px;
+    }
+  }
+}
