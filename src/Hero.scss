@@ -9,14 +9,14 @@ img {
   max-height: 70%;
 
   object-fit: contain;
-  top: 50%;
+  top: 60%;
   left: 50%;
   z-index: 2;
 }
 
 .text-parent {
   position: absolute;
-  top: 35%;
+  top: 75%;
 
   &:first-of-type {
     z-index: 1;
@@ -38,12 +38,11 @@ img {
 
     &.outline {
       -webkit-text-stroke: 5px wheat;
-      text-stroke: 1px wheat;
       color: transparent;
     }
 
     &:last-of-type {
-      margin-left: -30px;
+      margin-left: -30%;
     }
   }
 }
